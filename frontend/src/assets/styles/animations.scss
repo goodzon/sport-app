@@ -1,0 +1,217 @@
+// Анимации для различных элементов интерфейса
+
+// Пульсация
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  // Вибрация (для ошибок)
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  .shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  // Появление снизу
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.4s ease-out forwards;
+  }
+  
+  // Появление сверху
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-down {
+    animation: fadeInDown 0.4s ease-out forwards;
+  }
+  
+  // Появление слева
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 0.4s ease-out forwards;
+  }
+  
+  // Появление справа
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in-right {
+    animation: fadeInRight 0.4s ease-out forwards;
+  }
+  
+  // Анимация вращения (для спиннеров)
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate 1s linear infinite;
+  }
+  
+  // Плавное подсвечивание
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(252, 53, 101, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(252, 53, 101, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(252, 53, 101, 0.5);
+    }
+  }
+  
+  .glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  // Анимация для музыкального плеера - эквалайзер
+  @keyframes equalizer-1 {
+    0%, 100% { height: 8px; }
+    50% { height: 16px; }
+  }
+  
+  @keyframes equalizer-2 {
+    0%, 100% { height: 12px; }
+    30% { height: 5px; }
+    60% { height: 18px; }
+  }
+  
+  @keyframes equalizer-3 {
+    0%, 100% { height: 14px; }
+    35% { height: 22px; }
+    70% { height: 6px; }
+  }
+  
+  .equalizer-bar-1 {
+    animation: equalizer-1 0.8s ease-in-out infinite;
+  }
+  
+  .equalizer-bar-2 {
+    animation: equalizer-2 0.8s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .equalizer-bar-3 {
+    animation: equalizer-3 0.8s ease-in-out infinite;
+    animation-delay: 0.4s;
+  }
+  
+  // Анимация для перехода между страницами
+  .page-enter-active,
+  .page-leave-active {
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .page-enter-from,
+  .page-leave-to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  // Эффект звуковой волны для плеера
+  @keyframes sound-wave {
+    0% {
+      transform: scaleY(0.2);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(0.2);
+    }
+  }
+  
+  .sound-wave-bar {
+    display: inline-block;
+    width: 3px;
+    background: var(--accent-primary);
+    margin: 0 1px;
+    animation: sound-wave 1s ease-in-out infinite;
+    
+    &:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    
+    &:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+    
+    &:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+  }
