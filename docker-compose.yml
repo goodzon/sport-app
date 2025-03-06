@@ -1,7 +1,5 @@
-version: '3.8'
-
 services:
-  # База данных PostgreSQL
+  # PostgreSQL база данных
   postgres:
     image: postgres:15-alpine
     container_name: fitbeast-postgres
@@ -21,7 +19,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # Python-парсер (запускается один раз для заполнения базы данных)
+  # Python-парсер для заполнения базы данных
   parser:
     build:
       context: ./parser
@@ -41,9 +39,7 @@ services:
       DB_USER: postgres
       DB_PASSWORD: postgres
       DB_NAME: fitbeast
-    # Запускается один раз и завершается
     restart: "no"
-    # Сначала парсим данные, затем инициализируем БД
     command: >
       sh -c "python parser.py && python db_init.py --host=postgres --user=postgres --password=postgres --database=fitbeast --sample-data"
 
@@ -90,6 +86,8 @@ services:
       - backend
     networks:
       - fitbeast-network
+    env_file:
+      - ./frontend/.env
     restart: unless-stopped
 
 # Сеть для коммуникации контейнеров

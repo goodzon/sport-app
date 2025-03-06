@@ -1,5 +1,5 @@
 # Стадия сборки
-FROM node:18-alpine as build-stage
+FROM node:18-alpine AS build-stage
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Стадия продакшена
-FROM nginx:stable-alpine as production-stage
+FROM nginx:stable-alpine AS production-stage
 
 # Копируем собранные файлы из стадии сборки
 COPY --from=build-stage /app/dist /usr/share/nginx/html
