@@ -1,0 +1,126 @@
+2025-03-06 18:56:43,012 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 18:56:43,012 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 18:56:43,012 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 18:56:44,514 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 18:56:44,515 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 18:56:46,017 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 18:56:46,017 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 18:56:47,519 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 18:56:47,519 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 18:56:49,021 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 18:56:49,022 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 18:56:50,525 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 18:56:50,528 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 18:56:50,528 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 18:59:06,710 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 18:59:06,710 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 18:59:06,710 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 18:59:08,212 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 18:59:08,213 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 18:59:09,715 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 18:59:09,715 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 18:59:11,217 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 18:59:11,218 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 18:59:12,720 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 18:59:12,720 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 18:59:14,224 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 18:59:14,226 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 18:59:14,227 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:00:09,308 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:00:09,309 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:00:09,309 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:00:10,811 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:00:10,811 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:00:12,313 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:00:12,314 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:00:13,815 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:00:13,816 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:00:15,318 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:00:15,318 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:00:16,824 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:00:16,826 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:00:16,826 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:07:19,149 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:07:19,149 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:07:19,149 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:07:20,651 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:07:20,652 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:07:22,153 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:07:22,153 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:07:23,655 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:07:23,655 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:07:25,157 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:07:25,158 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:07:26,661 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:07:26,664 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:07:26,665 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:15:49,331 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:15:49,331 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:15:49,332 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:15:50,834 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:15:50,834 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:15:52,334 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:15:52,334 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:15:53,836 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:15:53,836 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:15:55,338 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:15:55,339 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:15:56,843 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:15:56,845 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:15:56,846 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:18:50,135 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:18:50,135 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:18:50,135 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:18:51,636 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:18:51,637 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:18:53,139 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:18:53,139 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:18:54,641 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:18:54,641 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:18:56,142 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:18:56,143 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:18:57,647 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:18:57,650 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:18:57,650 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:21:02,994 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:21:02,994 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:21:02,995 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:21:04,497 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:21:04,497 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:21:05,999 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:21:05,999 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:21:07,501 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:21:07,502 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:21:09,004 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:21:09,004 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:21:10,508 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:21:10,511 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:21:10,511 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:22:46,026 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:22:46,026 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:22:46,026 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:22:47,528 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:22:47,529 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:22:49,029 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:22:49,030 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:22:50,532 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:22:50,532 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:22:52,032 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:22:52,033 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:22:53,537 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:22:53,539 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:22:53,539 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql
+2025-03-06 19:42:10,162 - INFO - Начинаем парсинг данных о пищевой ценности продуктов
+2025-03-06 19:42:10,163 - INFO - Извлечение данных о proteins из https://frs24.ru/st/soderzhanie-belka-v-produktah/
+2025-03-06 19:42:10,163 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-belka-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:42:11,665 - INFO - Извлечение данных о fats из https://frs24.ru/st/soderzhanie-zhirov-v-produktah/
+2025-03-06 19:42:11,666 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-zhirov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:42:13,167 - INFO - Извлечение данных о carbs из https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/
+2025-03-06 19:42:13,168 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-uglevodov-v-produktah/: local variable 'headers' referenced before assignment
+2025-03-06 19:42:14,670 - INFO - Извлечение данных о calories из https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/
+2025-03-06 19:42:14,670 - ERROR - Ошибка при обработке https://frs24.ru/st/tablica-kalorijnosti-produktov-pitaniya/: local variable 'headers' referenced before assignment
+2025-03-06 19:42:16,172 - INFO - Извлечение данных о water из https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/
+2025-03-06 19:42:16,172 - ERROR - Ошибка при обработке https://frs24.ru/st/soderzhanie-vody-v-produktah-tablica/: local variable 'headers' referenced before assignment
+2025-03-06 19:42:17,677 - INFO - Данные успешно сохранены в parsed_data/nutrition_data.json. Всего продуктов: 0
+2025-03-06 19:42:17,680 - INFO - SQL-скрипт успешно создан: parsed_data/insert_data.sql
+2025-03-06 19:42:17,680 - INFO - Парсинг завершен. Результаты сохранены в parsed_data/nutrition_data.json и parsed_data/insert_data.sql

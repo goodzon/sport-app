@@ -1,5 +1,5 @@
 services:
-  # PostgreSQL база данных
+  # PostgreSQL database
   postgres:
     image: postgres:15-alpine
     container_name: fitbeast-postgres
@@ -18,8 +18,9 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
-  # Python-парсер для заполнения базы данных
+  # Python parser for database initialization
   parser:
     build:
       context: ./parser
@@ -43,7 +44,7 @@ services:
     command: >
       sh -c "python parser.py && python db_init.py --host=postgres --user=postgres --password=postgres --database=fitbeast --sample-data"
 
-  # Node.js бэкенд
+  # Node.js backend
   backend:
     build:
       context: ./backend
@@ -69,9 +70,11 @@ services:
       DB_PASSWORD: postgres
       DB_NAME: fitbeast
       PORT: 3000
+      JWT_SECRET: your_jwt_secret_key_here
+      JWT_EXPIRES_IN: 7d
     restart: unless-stopped
 
-  # Vue.js фронтенд
+  # Vue.js frontend
   frontend:
     build:
       context: ./frontend
@@ -80,21 +83,23 @@ services:
     volumes:
       - ./frontend:/app
       - /app/node_modules
+      - /app/dist
     ports:
-      - "80:80"
+      - "8080:80"
     depends_on:
       - backend
     networks:
       - fitbeast-network
-    env_file:
-      - ./frontend/.env
+    environment:
+      - VUE_APP_API_URL=http://localhost:3000/api
+      - NODE_ENV=production
     restart: unless-stopped
 
-# Сеть для коммуникации контейнеров
+# Network for container communication
 networks:
   fitbeast-network:
     driver: bridge
 
-# Постоянное хранилище для базы данных
+# Persistent storage for database
 volumes:
   postgres_data:

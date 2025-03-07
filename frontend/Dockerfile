@@ -8,13 +8,14 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci
+RUN npm install
 
 # Copy project files
 COPY . .
 
-# Copy the ESLint config we created
+# Copy the ESLint and Babel config files
 COPY .eslintrc.js .
+COPY babel.config.js .
 
 # Build the project
 RUN npm run build

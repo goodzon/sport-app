@@ -4,30 +4,23 @@ import router from './router'
 import store from './store'
 import './assets/styles/global.scss'
 
+// Configure API URL
+const apiBaseUrl = window.VUE_APP_CONFIG?.apiUrl || '/api';
+console.log('Using API URL:', apiBaseUrl);
+
+// Create app
 const app = createApp(App)
 
-// Регистрация плагинов
+// Register plugins
 app.use(router)
 app.use(store)
 
-// Глобальная обработка ошибок
+// Global error handler
 app.config.errorHandler = (err, vm, info) => {
-  console.error('Глобальная ошибка Vue:', err)
-  console.error('Компонент:', vm)
-  console.error('Информация:', info)
-  
-  // Отправка ошибок в аналитику или на сервер (если необходимо)
-  // analyticsService.logError(err)
-  
-  // Отображение уведомления пользователю
-  store.dispatch('app/showNotification', {
-    type: 'error',
-    message: 'Произошла ошибка в приложении. Пожалуйста, обновите страницу.'
-  })
+  console.error('Global Vue error:', err)
+  console.log('Component:', vm)
+  console.log('Info:', info)
 }
 
-// Инициализация приложения после монтирования
+// Mount app
 app.mount('#app')
-
-// Инициализация хранилища
-store.dispatch('init')

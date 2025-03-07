@@ -1,7 +1,18 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
+  lintOnSave: false,
   transpileDependencies: true,
+  chainWebpack: config => {
+    config.plugin('html').tap(args => {
+      args[0].template = './public/index.html';
+      return args;
+    });
+    // Disable eslint in production
+    if (process.env.NODE_ENV === 'production') {
+      config.module.rules.delete('eslint');
+    }
+  },
   devServer: {
     proxy: {
       '/api': {
